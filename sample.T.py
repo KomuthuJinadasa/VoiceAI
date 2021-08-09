@@ -1,4 +1,5 @@
 import tkinter as tk
+from tkinter.constants import LEFT
 
 root = tk.Tk()
 
@@ -9,6 +10,6 @@ frame = tk.Frame(root, bg='light green')
 frame.place(relwidth=1, relheight=0.10)
 
 button = tk.Button(root, text="Test Button", bg='red', fg='purple' )
-button.pack()
+button.pack(LEFT)
 
 root.mainloop()
