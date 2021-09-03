@@ -9,6 +9,7 @@ render = ImageTk.PhotoImage(load)
 img = Label(root,image =render)
 img.place(x=0,y=0)
 
+
 def openNewWindow():
     newWindow = Toplevel(root)
     newWindow.title("FAQ")
