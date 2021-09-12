@@ -15,7 +15,11 @@ def openNewWindow():
     newWindow.title("FAQ")
     newWindow.geometry("400x400")
     Label(newWindow, text ="This is FAQ \n What should be clicked to start recording my live audio? \n "
-    "-Please click on the mic button\n\n\n\nAvaialble commands\nTug alpha can you red me?").pack()
+    "-Please click on the mic button\n\n\n\nAvaialble commands\n[Tug Name], pull/push* [Power Amount]\n"
+    "[Tug Name], pull directly* astern\n[Tug Name], all stop\n[Tug Name], move to pull/push - [Tug Name], be ready to pull/push\n"
+    "[Tug Name], move to [Position]\n[Tug Name], square up\n\n<Tug Name>'s\nTug Alpha, Bravo, Charlie\nTug 1,2,3\nTug A,B,C\n\n"
+    "<Position>\nAft, Fore, Port, Starboard, Port Quarter, Starboard Quarter\n\n<Power Amount>\n5%, 10%, 25%, 50%, 75%, 100%\nminimum, minimum Weight, Bare Weight\n"
+    "Quarter Power*, Half Power*, Three Quarters Power*, Full Power*").pack()
 
 
 #FAQ Button
