@@ -1,6 +1,7 @@
 from tkinter import *
 from PIL import Image, ImageTk
 from tkinter import ttk
+from tkinter import filedialog
 
 root = Tk()
 root.geometry('900x700')
@@ -17,6 +18,17 @@ def openNewWindow():
     Label(newWindow, text ="This is FAQ \n What should be clicked to start recording my live audio? \n "
     "-Please click on the mic button\n\n\n\nAvaialble commands\nTug alpha can you red me?").pack()
 
+def openNewWindow1():
+    newWindow1 = Toplevel(root)
+    newWindow1.title("File Browser")
+    newWindow1.geometry("400x400")
+    Label(newWindow1, text ="Please insert your pre-recorded audio here \n  \n ").pack()
+    filepath = filedialog.askopenfilename()
+    botton11 = Button(newWindow1, text = "open",command = filepath)
+    #button.pack()
+    #window.mainloop()
+    filepath = filedialog.askopenfilename()
+    #button101 = Button(text = "open")#,command=openfile)
 
 #FAQ Button
 img1 = PhotoImage(file = 'button.png')
@@ -37,7 +49,7 @@ button3.place(x=10, y=10)
 
 #FIle Browser Icon
 img4 = PhotoImage(file = 'folder.png')
-button4 = Button(root,image = img4,border=00)
+button4 = Button(root,image = img4,border=00,command = openNewWindow1)
 button4.place(x=10, y=630)
 
 #logo but used as a button
